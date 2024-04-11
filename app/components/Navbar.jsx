@@ -1,9 +1,10 @@
 "use client";
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Navlink from './Navlink'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import MenuOverlay from './MenuOverlay';
+import Image from 'next/image';
 
 const navlinks = [
     {
@@ -27,17 +28,22 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
             <div className='flex flex-wrap items-center justify-between mx-auto p-4'>
                 <Link href={"/"} className='text-2xl md:text-5xl text-white font-semibold'>
-                    LOGO
+                    <Image
+                        src={`/images/UW.png`}
+                        alt="University of Waterloo logo"
+                        width={75}
+                        height={55}
+                    />
                 </Link>
                 <div className="mobile-menu block md:hidden">
                     {
                         !navbarOpen ? (
                             <button onClick={() => setnavbarOpen(true)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
-                                <Bars3Icon className="h-5 w-5"/>
+                                <Bars3Icon className="h-5 w-5" />
                             </button>
                         ) : (
                             <button onClick={() => setnavbarOpen(false)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white'>
-                                <XMarkIcon className="h-5 w-5"/>
+                                <XMarkIcon className="h-5 w-5" />
                             </button>
                         )
                     }

@@ -47,7 +47,7 @@ const HeroSection = () => {
             <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
                 <div className='w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
                     <Image
-                        src="/images/Portrait.jpg"
+                        src="/portfolio/images/Portrait.jpg"
                         alt="portfolio portrait"
                         width={300}
                         height={300}

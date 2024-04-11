@@ -31,8 +31,8 @@ const HeroSection = () => {
                             repeat={Infinity}
                         />
                     </h1>
-                    <p className='text-[#ADB7BE] text-lg mb-6 lg:text-xl'>
-                        Lorem ipsum dolor sit amet
+                    <p className='text-[#ADB7BE] text-sm mb-6 lg:text-md'>
+                        <i>Yesterday is history, tomorrow is a mystery, but today is a gift. That is why it is called the present.</i>
                     </p>
                     <div>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-green-600 hover:bg-green-700 text-white'>

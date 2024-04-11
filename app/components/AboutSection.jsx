@@ -54,6 +54,8 @@ const AboutSection = () => {
         });
     };
 
+    const aboutMe = "I\'m a third year honours co-op computer science student studying at the University of Waterloo. My primary expertise is in Cloud Platforms Engineering, working with technologies such as Azure Kubernetes Service, API-Management, and JFrog Artifactory. Additionally, I have worked as an operations intern building data pipelines for Manulife Global Cyber Security. I love working on personal (oftentimes programming) projects in my spare time, as well as playing competitive strategy games. Passionate about everything I love, I thrive in any environment where I truly enjoy what I\'m doing."
+
     return (
         <section className="text-white">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -63,7 +65,7 @@ const AboutSection = () => {
                         About Me
                     </h2>
                     <p className='text-base lg:text-lg'>
-                        I'm a third year honours co-op computer science student studying at the University of Waterloo. My primary expertise is in Cloud Platforms Engineering, working with technologies such as Azure Kubernetes Service, API-Management, and JFrog Artifactory. Additionally, I have worked as an operations intern building data pipelines for Manulife Global Cyber Security. I love working on personal (oftentimes programming) projects in my spare time, as well as playing competitive strategy games. Passionate about everything I love, I thrive in any environment where I truly enjoy what I'm doing.
+                        {aboutMe}
                     </p>
                     <div className='flex flex-row mt-8'>
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>

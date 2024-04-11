@@ -49,8 +49,8 @@ const HeroSection = () => {
                     <Image
                         src={`/images/Portrait.jpg`}
                         alt="portfolio portrait"
-                        width={300}
-                        height={300}
+                        width={500}
+                        height={500}
                         style={{ borderRadius: '50%' }}
                         className='absolute transform -translate -x-1/2 -translate-y-1/2 top-1/2 bottom-1/2 px-5 py-5'
                     />

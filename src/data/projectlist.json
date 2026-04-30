@@ -1,0 +1,65 @@
+{
+  "featured": {
+    "image": "projects/personal-portfolio.png",
+    "logo": "projects/personal-portfolio-logo.png",
+    "filename": "Portfolio",
+    "name": "Personal Portfolio",
+    "subtitle": "This site",
+    "techstack": [
+      "Next.js",
+      "React",
+      "TailwindCSS"
+    ],
+    "blurb": "Static portfolio site adapted from a Rails profile to this Next.js/Tailwind template.",
+    "link": "",
+    "github": ""
+  },
+  "projectlist": [
+    {
+      "image": "projects/trailblazer.png",
+      "logo": "projects/trailblazer-logo.png",
+      "filename": "Clio.Identity",
+      "name": "Clio Identity Migration",
+      "subtitle": "Authentication platform migration",
+      "techstack": [
+        "Ruby",
+        "Rails",
+        "OAuth 2.0",
+        "SAML"
+      ],
+      "blurb": "Engineered OAuth 2.0 flows and migrated legacy authentication to a unified Identity platform for multiple apps.",
+      "link": "",
+      "github": ""
+    },
+    {
+      "image": "projects/trailblazer.png",
+      "logo": "projects/trailblazer-logo.png",
+      "filename": "VR.Training",
+      "name": "VR Training App",
+      "subtitle": "Immersive maintenance training",
+      "techstack": [
+        "Unity3D",
+        "C#",
+        "WebGL"
+      ],
+      "blurb": "Interactive VR experiences for aviation maintenance training, optimized for Meta Quest.",
+      "link": "",
+      "github": ""
+    },
+    {
+      "image": "projects/trailblazer.png",
+      "logo": "projects/trailblazer-logo.png",
+      "filename": "Manulife.Dashboard",
+      "name": "Manulife Dashboard",
+      "subtitle": "Internal React dashboard",
+      "techstack": [
+        "React",
+        "Node.js",
+        "Azure"
+      ],
+      "blurb": "React dashboard to streamline internal approvals and reduce ticket wait times.",
+      "link": "",
+      "github": ""
+    }
+  ]
+}

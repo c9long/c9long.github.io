@@ -1,0 +1,15 @@
+{
+  "educationlist": [
+    {
+      "logo": "logos/uw-logo.png",
+      "filename": "UWaterloo.ca",
+      "name": "University of Waterloo",
+      "program": "Computer Science",
+      "duration": "Current",
+      "points": [
+        "Co-op Program",
+        "Software & Web Development Focus"
+      ]
+    }
+  ]
+}

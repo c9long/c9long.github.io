@@ -1,0 +1,102 @@
+{
+  "worklist": [
+    {
+      "logo": "logos/clio-logo.png",
+      "filename": "Clio.inc",
+      "image": "images/clio-team.jpg",
+      "position": "Software Developer",
+      "company": "Clio",
+      "location": "Vancouver, BC",
+      "duration": "January 2025 - August 2025",
+      "team": "Identity Platform",
+      "companysite": "https://www.clio.com",
+      "points": [
+        "Engineered OAuth 2.0 authentication flows using Ruby on Rails and ORY Hydra for six customer-facing applications",
+        "Migrated 100% of legacy authentication systems to unified Identity platform, reducing authentication errors",
+        "Designed and implemented Warden-based SAML and SSO integrations for secure multi-tenant access",
+        "Collaborated with product, security, and DevOps teams to architect scalable backend services and automate CI/CD pipelines"
+      ],
+      "techstack": [
+        "Ruby",
+        "Rails",
+        "OAuth 2.0",
+        "SAML",
+        "ORY Hydra"
+      ]
+    },
+    {
+      "logo": "logos/amped-up-logo.png",
+      "filename": "AmpedUp.aviation",
+      "image": "images/amped_up_team.jpg",
+      "position": "VR Developer",
+      "company": "Amped Up Aviation",
+      "location": "Remote",
+      "duration": "May 2024 - December 2024",
+      "team": "VR Development",
+      "companysite": "https://www.ampedupaviation.com",
+      "points": [
+        "Prototyped and built interactive VR applications in Unity3D and C# for aviation maintenance training",
+        "Optimized real-time graphics pipelines for Meta Quest headsets and WebGL, improving frame rates by 20%",
+        "Integrated photorealistic Blender-designed 3D models, reducing manual asset cleanup time by 30%",
+        "Built automated test suites using Unity Test Framework to ensure stability across multiple device targets"
+      ],
+      "techstack": [
+        "Unity3D",
+        "C#",
+        "Meta Quest",
+        "WebGL",
+        "Blender"
+      ]
+    },
+    {
+      "logo": "logos/manulife-logo.png",
+      "filename": "Manulife.sre",
+      "image": "images/manulife-team.jpg",
+      "position": "Cloud Platforms Engineer",
+      "company": "Manulife",
+      "location": "Toronto, ON",
+      "duration": "May 2023 - August 2023",
+      "team": "DevPlat Reliability DevOps",
+      "companysite": "https://www.manulife.com",
+      "points": [
+        "Automated migration of 10% of all API endpoints from Apigee to Microsoft API Management using Node.js",
+        "Designed and launched React dashboard for 100+ project managers, cutting ticket wait times by 83%",
+        "Configured 10 New Relic synthetic monitors and integrated with MoogSoft AIOps alert system",
+        "Supported DevOps reliability by resolving PaaS incidents and optimizing Docker and Azure CI/CD pipelines"
+      ],
+      "techstack": [
+        "Node.js",
+        "React.js",
+        "Microsoft API Management",
+        "New Relic",
+        "MoogSoft",
+        "Docker",
+        "Azure"
+      ]
+    },
+    {
+      "logo": "logos/manulife-logo.png",
+      "filename": "Manulife.gcs",
+      "image": "images/manulife-team.jpg",
+      "position": "Cyber Security Analyst",
+      "company": "Manulife",
+      "location": "Toronto, ON",
+      "duration": "May 2022 - August 2022",
+      "team": "Global Cybersecurity Services",
+      "companysite": "https://www.manulife.com",
+      "points": [
+        "Built automated onboarding workflows using Microsoft Power Apps and Power Automate, reducing manual steps by 70%",
+        "Developed centralized Power Apps portal backed by SharePoint for 50+ team leads and managers",
+        "Designed and built ELT data pipeline using Power Automate and Azure Data Factory for Power BI dashboards",
+        "Conducted security audits on onboarding processes to ensure compliance with corporate cybersecurity standards"
+      ],
+      "techstack": [
+        "Microsoft Power Apps",
+        "Power Automate",
+        "SharePoint",
+        "Azure Data Factory",
+        "Power BI"
+      ]
+    }
+  ]
+}

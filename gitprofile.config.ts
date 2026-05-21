@@ -59,8 +59,9 @@ const CONFIG = {
   },
   seo: {
     title: 'Portfolio of Christopher Long',
-    description: '',
-    imageURL: '',
+    description:
+      'Christopher Long — Software developer. React, TypeScript, Node.js, Docker. Portfolio showcasing projects, experience, and publications.',
+    imageURL: 'https://via.placeholder.com/1200x630.png?text=Christopher+Long',
   },
   social: {
     linkedin: 'c-r-long',

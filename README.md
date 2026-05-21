@@ -86,8 +86,6 @@ To view a live example, **[click here](https://arifszn.github.io/gitprofile)**.
 
 - Finally, visit `http://localhost:5173/gitprofile/` from your browser.
 
-> Alternatively, you can set up and run the project using Docker with **[Vail](https://github.com/arifszn/vail)**, a powerful tool for local development of JavaScript/TypeScript Apps.
-
 ## 🎨 Customization
 
 All the magic happens in the file `gitprofile.config.ts`. Open it and modify it according to your preference.
@@ -316,7 +314,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
+  footer: `Made with <a
       class="text-primary" href="https://github.com/arifszn/gitprofile"
       target="_blank"
       rel="noreferrer"

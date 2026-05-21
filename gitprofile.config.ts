@@ -27,7 +27,7 @@ const CONFIG = {
         // Properties for manually specifying projects
         projects: [
           'c9long/c9long.github.io',
-          'c0long/let-me-cook',
+          'c9long/let-me-cook',
           'c9long/lord-vader',
           'c9long/discord-fishing',
           'c9long/profile',

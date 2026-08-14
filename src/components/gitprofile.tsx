@@ -39,7 +39,11 @@ const GitProfile = ({ config }: { config: Config }) => {
   const [sanitizedConfig] = useState<SanitizedConfig | Record<string, never>>(
     getSanitizedConfig(config),
   );
-  const [theme, setTheme] = useState<string>(DEFAULT_THEMES[0]);
+  const [theme, setTheme] = useState<string>(() =>
+    Object.keys(sanitizedConfig).length !== 0
+      ? getInitialTheme(sanitizedConfig.themeConfig)
+      : DEFAULT_THEMES[0],
+  );
   const [error, setError] = useState<CustomError | null>(() =>
     Object.keys(sanitizedConfig).length === 0 ? INVALID_CONFIG_ERROR : null,
   );
@@ -167,7 +171,6 @@ const GitProfile = ({ config }: { config: Config }) => {
 
   useEffect(() => {
     if (Object.keys(sanitizedConfig).length !== 0) {
-      setTheme(getInitialTheme(sanitizedConfig.themeConfig));
       setupHotjar(sanitizedConfig.hotjar);
       loadData();
     }

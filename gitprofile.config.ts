@@ -42,17 +42,28 @@ const CONFIG = {
         {
           title: 'Deprecate Legacy Authentication',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+            'Deprecated legacy authentication into the main Clio customer application (Clio Manage), which was later used to also deprecate Clio Grow. This allowed for future IAM security policies, such as mandatory MFA to be enforced as all users were successfully migrated to a unified Identity service.',
+          imageUrl: '/clio.png',
         },
         {
-          title: 'Clio Admin SAML Portal',
+          title: 'Enterprise-Level SAML',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'Participated in architectural discussions, built backend and frontend components for firm-wide SAML, integrated Google, Microsoft, and Okta SAML authentication into existing in-house SSO solution.',
+          imageUrl: '/clio.png',
+        },
+        {
+          title: 'Jarvis-like AI Assistant',
+          description:
+            'Take-home technical assignment completed for a Stealth Startup as part of the interview process. Resulted in employment offer for a Software Developer position.',
+          imageUrl: '/aelven.avif',
+          link: 'https://github.com/c9long/Aelven-AI-Assignment',
+        },
+        {
+          title: 'Image Converter',
+          description:
+            'A tool for converting images between different formats.',
+          imageUrl: '/img-converter.png',
+          link: 'https://github.com/c9long/image-converter',
         },
       ],
     },
@@ -67,7 +78,7 @@ const CONFIG = {
     linkedin: 'c-r-long',
     website: 'https://c9long.github.io',
     phone: '905-621-3275',
-    email: 'christopher.long@uwaterloo.ca',
+    email: 'chris.r.long03@gmail.com',
   },
   resume: {
     fileUrl: 'resume.pdf', // Empty fileUrl will hide the `Download Resume` button.

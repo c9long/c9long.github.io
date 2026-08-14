@@ -61,7 +61,7 @@ const CONFIG = {
         {
           title: 'Image Converter',
           description:
-            'A tool for converting images between different formats.',
+            'A tool for converting images between different formats. Built out of curiosity and for a personal interest in converting images from iPhone HEIC format to more widely supported formats like PNG and JPEG.',
           imageUrl: '/img-converter.png',
           link: 'https://github.com/c9long/image-converter',
         },

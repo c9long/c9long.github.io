@@ -100,6 +100,12 @@ const CONFIG = {
   ],
   experiences: [
     {
+      company: 'Stealth AI Startup',
+      position: 'Software Developer (Contract)',
+      from: 'June 2026',
+      to: 'Present',
+    },
+    {
       company: 'Clio',
       position: 'Software Developer Co-op',
       from: 'January 2025',

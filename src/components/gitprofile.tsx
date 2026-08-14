@@ -77,7 +77,7 @@ const GitProfile = ({ config }: { config: Config }) => {
         } else {
           setError(GENERIC_ERROR);
         }
-      } catch (innerError) {
+      } catch {
         setError(GENERIC_ERROR);
       }
     } else {
@@ -172,12 +172,15 @@ const GitProfile = ({ config }: { config: Config }) => {
   useEffect(() => {
     if (Object.keys(sanitizedConfig).length !== 0) {
       setupHotjar(sanitizedConfig.hotjar);
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- standard fetch-on-mount pattern; loadData tracks its own loading state
       loadData();
     }
   }, [sanitizedConfig, loadData]);
 
   useEffect(() => {
-    theme && document.documentElement.setAttribute('data-theme', theme);
+    if (theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
   }, [theme]);
 
   return (

@@ -40,10 +40,46 @@ const GitProfile = ({ config }: { config: Config }) => {
     getSanitizedConfig(config),
   );
   const [theme, setTheme] = useState<string>(DEFAULT_THEMES[0]);
-  const [error, setError] = useState<CustomError | null>(null);
+  const [error, setError] = useState<CustomError | null>(() =>
+    Object.keys(sanitizedConfig).length === 0 ? INVALID_CONFIG_ERROR : null,
+  );
   const [loading, setLoading] = useState<boolean>(false);
   const [profile, setProfile] = useState<Profile | null>(null);
   const [githubProjects, setGithubProjects] = useState<GithubProject[]>([]);
+
+  const handleError = useCallback((error: AxiosError | Error): void => {
+    console.error('Error:', error);
+
+    if (error instanceof AxiosError) {
+      try {
+        const reset = formatDistance(
+          new Date(error.response?.headers?.['x-ratelimit-reset'] * 1000),
+          new Date(),
+          { addSuffix: true },
+        );
+
+        if (typeof error.response?.status === 'number') {
+          switch (error.response.status) {
+            case 403:
+              setError(setTooManyRequestError(reset));
+              break;
+            case 404:
+              setError(INVALID_GITHUB_USERNAME_ERROR);
+              break;
+            default:
+              setError(GENERIC_ERROR);
+              break;
+          }
+        } else {
+          setError(GENERIC_ERROR);
+        }
+      } catch (innerError) {
+        setError(GENERIC_ERROR);
+      }
+    } else {
+      setError(GENERIC_ERROR);
+    }
+  }, []);
 
   const getGithubProjects = useCallback(
     async (publicRepoCount: number): Promise<GithubProject[]> => {
@@ -126,13 +162,11 @@ const GitProfile = ({ config }: { config: Config }) => {
     sanitizedConfig.github.username,
     sanitizedConfig.projects.github.display,
     getGithubProjects,
+    handleError,
   ]);
 
   useEffect(() => {
-    if (Object.keys(sanitizedConfig).length === 0) {
-      setError(INVALID_CONFIG_ERROR);
-    } else {
-      setError(null);
+    if (Object.keys(sanitizedConfig).length !== 0) {
       setTheme(getInitialTheme(sanitizedConfig.themeConfig));
       setupHotjar(sanitizedConfig.hotjar);
       loadData();
@@ -142,40 +176,6 @@ const GitProfile = ({ config }: { config: Config }) => {
   useEffect(() => {
     theme && document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
-
-  const handleError = (error: AxiosError | Error): void => {
-    console.error('Error:', error);
-
-    if (error instanceof AxiosError) {
-      try {
-        const reset = formatDistance(
-          new Date(error.response?.headers?.['x-ratelimit-reset'] * 1000),
-          new Date(),
-          { addSuffix: true },
-        );
-
-        if (typeof error.response?.status === 'number') {
-          switch (error.response.status) {
-            case 403:
-              setError(setTooManyRequestError(reset));
-              break;
-            case 404:
-              setError(INVALID_GITHUB_USERNAME_ERROR);
-              break;
-            default:
-              setError(GENERIC_ERROR);
-              break;
-          }
-        } else {
-          setError(GENERIC_ERROR);
-        }
-      } catch (innerError) {
-        setError(GENERIC_ERROR);
-      }
-    } else {
-      setError(GENERIC_ERROR);
-    }
-  };
 
   return (
     <div className="fade-in h-screen">

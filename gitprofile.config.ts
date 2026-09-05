@@ -26,6 +26,7 @@ const CONFIG = {
       manual: {
         // Properties for manually specifying projects
         projects: [
+          'c9long/lc_game',
           'c9long/c9long.github.io',
           'c9long/let-me-cook',
           'c9long/lord-vader',
@@ -39,6 +40,13 @@ const CONFIG = {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
+        {
+          title: 'Commit City (NeetCode 150 Game)',
+          description:
+            "A gamified version of the NeetCode 150 built to make consistent LeetCode practice stick. Topics form a tech tree kept fresh with spaced repetition, accepted solves grow a city, and an in-app Monaco editor submits straight to LeetCode's judge. Includes syntax drills generated from the CPython docs. SvelteKit on Cloudflare Workers + D1 with passkey login.",
+          imageUrl: '/lc-game.svg',
+          link: 'https://github.com/c9long/lc_game',
+        },
         {
           title: 'Deprecate Legacy Authentication',
           description:

@@ -45,7 +45,7 @@ const CONFIG = {
           description:
             "A gamified version of the NeetCode 150 built to make consistent LeetCode practice stick. Topics form a tech tree kept fresh with spaced repetition, accepted solves grow a city, and an in-app Monaco editor submits straight to LeetCode's judge. Includes syntax drills generated from the CPython docs. SvelteKit on Cloudflare Workers + D1 with passkey login.",
           imageUrl: '/lc-game.svg',
-          link: 'https://github.com/c9long/lc_game',
+          link: 'https://lc-game.c9long.workers.dev/',
         },
         {
           title: 'Deprecate Legacy Authentication',
@@ -71,7 +71,7 @@ const CONFIG = {
           description:
             'A tool for converting images between different formats. Built out of curiosity and for a personal interest in converting images from iPhone HEIC format to more widely supported formats like PNG and JPEG.',
           imageUrl: '/img-converter.png',
-          link: 'https://github.com/c9long/image-converter',
+          link: 'https://github.com/c9long/image-converter/releases',
         },
       ],
     },

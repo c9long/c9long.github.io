@@ -108,6 +108,12 @@ const CONFIG = {
   ],
   experiences: [
     {
+      company: 'Optimize Financial Group',
+      position: 'Full-Stack Software Developer',
+      from: 'September 2026',
+      to: 'Present',
+    },
+    {
       company: 'Stealth AI Startup',
       position: 'Software Developer (Contract)',
       from: 'June 2026',
@@ -115,28 +121,28 @@ const CONFIG = {
     },
     {
       company: 'Clio',
-      position: 'Software Developer Co-op',
+      position: 'Software Developer (Co-op)',
       from: 'January 2025',
       to: 'August 2025',
       companyLink: 'https://www.clio.com/',
     },
     {
       company: 'Flightline Training Services',
-      position: 'VR Developer',
+      position: 'VR Developer (Contract)',
       from: 'May 2024',
       to: 'December 2024',
       companyLink: 'https://www.flightlinetraining.com/',
     },
     {
       company: 'Manulife Financial',
-      position: 'Cloud Platforms Engineering Intern',
+      position: 'Cloud Platforms Engineering (Co-op)',
       from: 'May 2023',
       to: 'August 2023',
       companyLink: 'https://www.manulife.com',
     },
     {
       company: 'Manulife Financial',
-      position: 'ETS Security Operations Intern',
+      position: 'Cyber Security Analyst (Co-op)',
       from: 'May 2022',
       to: 'August 2022',
       companyLink: 'https://www.manulife.com',

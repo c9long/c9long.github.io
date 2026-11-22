@@ -1,0 +1,43 @@
+name: Site Health Check
+
+# Fails (and so triggers GitHub's failed-workflow email) if the live site is
+# serving unbuilt template source, e.g. when the Pages source setting is
+# "Deploy from a branch" instead of "GitHub Actions".
+
+on:
+  schedule:
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch live site
+        run: curl --fail --silent --show-error --location --retry 3 --retry-delay 10 https://c9long.github.io/ -o index.html
+
+      - name: Check for unrendered template tags
+        run: |
+          if grep -q '<%' index.html; then
+            echo "::error::Live site contains unrendered template tags. Check Settings > Pages > Source is set to GitHub Actions."
+            grep -n '<%' index.html
+            exit 1
+          fi
+
+      - name: Check the built app is referenced
+        run: |
+          if ! grep -q 'id="root"' index.html; then
+            echo "::error::Live site has no #root element."
+            exit 1
+          fi
+          if grep -q '/src/main.tsx' index.html; then
+            echo "::error::Live site references the unbuilt /src/main.tsx entry point."
+            exit 1
+          fi
+          if ! grep -Eq '/assets/[^"]+\.js' index.html; then
+            echo "::error::Live site does not reference a built JS bundle."
+            exit 1
+          fi

@@ -11,7 +11,7 @@ export const INVALID_CONFIG_ERROR: CustomError = {
   title: 'Invalid Config!',
   subTitle: (
     <p>
-      Please provide correct config in <code>gitprofile.config.ts</code>.
+      Please provide correct config in <code>site.config.ts</code>.
     </p>
   ),
 };
@@ -42,8 +42,7 @@ export const INVALID_GITHUB_USERNAME_ERROR: CustomError = {
   title: 'Invalid GitHub Username!',
   subTitle: (
     <p>
-      Please provide correct github username in{' '}
-      <code>gitprofile.config.ts</code>.
+      Please provide correct github username in <code>site.config.ts</code>.
     </p>
   ),
 };

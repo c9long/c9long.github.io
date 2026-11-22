@@ -265,25 +265,6 @@ interface Hotjar {
   snippetVersion?: number;
 }
 
-interface Blog {
-  /**
-   * medium | dev
-   */
-  source?: string;
-
-  /**
-   * Username
-   */
-  username?: string;
-
-  /**
-   * How many articles to display
-   *
-   * Max is 10
-   */
-  limit?: number;
-}
-
 interface ThemeConfig {
   /**
    * Default theme
@@ -376,11 +357,6 @@ interface Config {
    * Hotjar config
    */
   hotjar?: Hotjar;
-
-  /**
-   * Blog config
-   */
-  blog?: Blog;
 
   /**
    * Theme config

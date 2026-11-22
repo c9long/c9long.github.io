@@ -1,16 +1,17 @@
 {
-  "name": "@arifszn/gitprofile",
-  "description": "Create an automatic portfolio based on GitHub profile",
-  "version": "4.0.0",
+  "name": "c9long.github.io",
+  "description": "Personal portfolio",
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
   "license": "MIT",
-  "author": "arifszn",
+  "author": "c9long",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arifszn/gitprofile.git"
+    "url": "https://github.com/c9long/c9long.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/arifszn/gitprofile/issues"
+    "url": "https://github.com/c9long/c9long.github.io/issues"
   },
   "scripts": {
     "dev": "vite",
@@ -52,37 +53,6 @@
     "vite-plugin-html": "^3.2.2",
     "vite-plugin-pwa": "^1.3.0"
   },
-  "keywords": [
-    "git-profile",
-    "gitprofile",
-    "gitportfolio",
-    "personal-site",
-    "template",
-    "portfolio",
-    "resume",
-    "cv",
-    "personal-website",
-    "portfolio-website",
-    "portfolio-site",
-    "portfolio-template",
-    "portfolio-page",
-    "developer-portfolio",
-    "portfolio-project",
-    "github-portfolio",
-    "tailwind-portfolio",
-    "vite-portfolio",
-    "projects",
-    "open-source",
-    "git",
-    "react-portfolio",
-    "github",
-    "github-page",
-    "github-pages",
-    "github-portfolio",
-    "vite-portfolio",
-    "academic-portfolio",
-    "github-api"
-  ],
   "allowScripts": {
     "esbuild@0.27.7": true
   }

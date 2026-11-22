@@ -28,13 +28,7 @@ import ExternalProjectCard from './external-project-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
 
-/**
- * Renders the GitProfile component.
- *
- * @param {Object} config - the configuration object
- * @return {JSX.Element} the rendered GitProfile component
- */
-const GitProfile = ({ config }: { config: Config }) => {
+const Portfolio = ({ config }: { config: Config }) => {
   const [sanitizedConfig] = useState<SanitizedConfig | Record<string, never>>(
     getSanitizedConfig(config),
   );
@@ -288,4 +282,4 @@ const GitProfile = ({ config }: { config: Config }) => {
   );
 };
 
-export default GitProfile;
+export default Portfolio;

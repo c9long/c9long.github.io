@@ -26,7 +26,6 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@arifszn/blog-js": "^2.0.6",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/react": "^19.2.18",

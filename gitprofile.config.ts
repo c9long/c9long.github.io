@@ -164,8 +164,6 @@ const CONFIG = {
     },
   ],
   publications: [{}],
-  // Display articles from your medium or dev account. (Optional)
-  blog: {},
   googleAnalytics: {},
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {},
